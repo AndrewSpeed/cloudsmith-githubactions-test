@@ -35,7 +35,6 @@ jobs:
       - name: Test
         env:
           CLOUDSMITH_API_HOST: ${{ secrets.CLOUDSMITH_API_HOST }}
-        env:
           CLOUDSMITH_API_KEY: ${{ env.CLOUDSMITH_API_KEY }}
         run: |
           pip list
