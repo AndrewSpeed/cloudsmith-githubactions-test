@@ -26,10 +26,8 @@ jobs:
 
       - name: Install Cloudsmith CLI
         uses: cloudsmith-io/cloudsmith-cli-action@v1.0.0
-        env:
-          CLOUDSMITH_API_KEY: ${{ env.CLOUDSMITH_API_KEY }}
         with:
-          api-key: $CLOUDSMITH_API_KEY
+          api-key: ${{ env.CLOUDSMITH_API_KEY }}
           pip-install: true
 
       - name: Test
