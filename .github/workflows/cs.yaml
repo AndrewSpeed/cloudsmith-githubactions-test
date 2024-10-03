@@ -20,7 +20,6 @@ jobs:
           oidc-namespace: 'cloudsmith'
           oidc-service-slug: 'testing-private'
           pip-install: true
-
       - name: Test
         run: |
           pip list
